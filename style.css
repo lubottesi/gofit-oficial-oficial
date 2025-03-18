@@ -1,0 +1,977 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* NAVBAR */
+
+#navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    /* Mantém a navbar fixa no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
+    background-color: #6C63FF;
+    padding: 1rem 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.logo a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+#navbar ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    transition: background-color 0.3s ease;
+    position: relative; /* Para posicionar o dropdown corretamente */
+}
+
+#navbar ul li:hover {
+    background-color: #5548d9;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: .5rem;
+}
+
+.nav-links-seta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .8rem;
+}
+
+#nav-links {
+    display: none; /* Esconde o menu por padrão */
+}
+
+#nav-links.show {
+    display: flex; /* Mostra o menu quando a classe 'show' é adicionada */
+}
+
+#navbar .seta-dropdown {
+    width: 2rem;
+}
+
+/* DROPDOWN */
+#navbar ul li ul.dropdown {
+    width: 100%; /* Largura do dropdown */
+    background: #6C63FF; /* Mesma cor da navbar */
+    position: absolute;
+    top: 100%; /* Posiciona o dropdown abaixo do item da navbar */
+    left: 0;
+    z-index: 999;
+    display: none;
+    border-radius: 0 0 1.5rem 1.5rem; /* Bordas arredondadas na parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o dropdown */
+    padding: 0.5rem 0; /* Espaçamento interno */
+}
+
+#navbar ul li ul.dropdown li {
+    display: block;
+    padding: 0.5rem 1rem; /* Espaçamento interno dos itens do dropdown */
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul li ul.dropdown li:hover {
+    background-color: #5548d9; /* Mesmo hover da navbar */
+}
+
+#navbar ul li ul.dropdown li a {
+    color: white; /* Mesma cor do texto da navbar */
+    text-decoration: none;
+}
+
+#navbar ul li:hover ul.dropdown {
+    display: block; /* Exibe o dropdown ao passar o mouse */
+}
+
+.nutricao-page {
+    scroll-behavior: smooth;
+}
+/* Hamburger Menu Styles */
+.menu-icon {
+    display: none; /* Hidden by default */
+}
+
+/* Estilos para o ícone de três traços (hamburger menu) */
+.menu-icon {
+    display: none; /* Esconde o ícone por padrão */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+/* BEM VINDO */
+
+#bemvindo {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7rem;
+}
+
+#bemvindo h1 {
+    font-size: 2.2rem;
+}
+
+/* SOBRE NOS */
+
+.sobre-nos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Cria 2 colunas de mesma largura */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #6C63FF, #8A7DFF);
+    height: 730px;
+}
+
+.sobre-nos-texto h1 {
+    font-size: 2.8rem;
+}
+
+.sobre-nos-texto p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.sobre-nos-texto a img {
+    width: 6rem;
+    text-align: center;
+    margin-top: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.sobre-nos img {
+    width: 90%;
+}
+
+.sobre-nos-texto a img:hover {
+    transform: scale(1.2);
+}
+
+.sobre-nos-texto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    gap: 1rem;
+    margin-left: 7rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+/* CARDS - INICIAIS */
+
+.todos-cartoes {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.cartao {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.cartao:hover {
+    transform: scale(1.1);
+}
+
+.cartao img {
+    border-radius: 100%;
+    height: 10rem;
+}
+
+.cartao a {
+    border: 4px solid #6C63FF;
+    border-radius: 2rem;
+    background-color: #6C63FF;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+
+/* CARDS*/
+
+.all-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.card {
+    perspective: 1000px;
+    /* Adiciona perspectiva para o efeito 3D */
+}
+
+.card-inner {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* Defina uma altura para o card */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* Mantém o estilo 3D */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+    /* Gira o card ao passar o mouse */
+}
+
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    backface-visibility: hidden;
+    /* Esconde a parte de trás quando não está visível */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem 1rem;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-front h3 {
+    margin-bottom: .5rem;
+}
+
+.card-back p {
+    font-size: .1rem;
+    font-weight: 500;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    /* Gira a parte de trás para que fique virada para baixo */
+    background-color: white;
+    /* Cor de fundo da parte de trás */
+    color: black;
+    /* Cor do texto da parte de trás */
+    gap: 1rem;
+}
+
+.card-back ul li {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.card img {
+    border-radius: 100%;
+    height: 10rem;
+}
+
+/* QUEM SOMOS */
+
+
+#quem-somos {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    /* Cria 2 colunas de mesma largura */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #6C63FF, #8A7DFF);
+    text-align: center;
+}
+
+
+.quem-somos-texto h2 {
+    font-size: 2.8rem;
+}
+
+.quem-somos-texto p {
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+#quem-somos img {
+    height: 30rem;
+    justify-self: end;
+    /* Centraliza horizontalmente */
+}
+
+.quem-somos-texto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    gap: 1rem;
+    margin-left: 7rem;
+    align-items: start;
+}
+
+
+#rodape {
+    background-color: #d3d3d3;
+    padding: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.rodape-texto {
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.rodape-icone {
+    margin-right: 8rem;
+}
+
+.rodape-icone img {
+    width: 1.8rem;
+    margin-left: .5rem;
+}
+
+
+/* NUTRI - INICIAL*/
+
+#nutri-inicial {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    /* Cria 2 colunas de mesma largura */
+    align-items: flex-start;
+    margin-top: 11rem;
+    gap: 7rem;
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda a largura */
+}
+
+#nutri-inicial img {
+    width: 20rem;
+    justify-self: flex-start;
+}
+
+#nutri-inicial h2 {
+    font-size: 2rem;
+}
+
+.nutri-inicial-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-left: 13rem;
+    font-size: 1.5rem;
+}
+
+.nutri-inicial-frase {
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra */
+    background: linear-gradient(to bottom, #8A7DFF, #C2B8FF);
+    font-weight: 500;
+}
+
+
+/* MACRO X MICRO*/
+
+#macro-micro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 1.5rem;
+    padding: 7rem 12rem 3rem 12rem;
+    background-color: #C2B8FF;
+}
+
+#macro-micro h2 {
+    font-size: 2rem;
+}
+
+#macro-micro h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+#macro-micro p {
+    font-size: 1.5rem;
+}
+
+
+/* CALORIA*/
+
+#caloria {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    padding: 7rem 12rem 2rem 12rem;
+}
+
+#caloria h2 {
+    font-size: 2rem;
+}
+
+#caloria h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+#caloria p {
+    font-size: 1.5rem;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: linear-gradient(to bottom, #8A7DFF, #C2B8FF);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra */
+}
+
+#calorieForm {
+    padding: 0rem 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    /* Faz com que o rótulo ocupe toda a largura */
+    margin: 10px 0 5px;
+    /* Margem para espaçamento */
+}
+
+input,
+select {
+    width: 100%;
+    /* Garante que os inputs e selects ocupem toda a largura */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Margem inferior para espaçamento */
+}
+
+#age,
+#height,
+#weight,
+#activityHours,
+#targetWeight {
+    width: 96.5%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* INFO NUTRI TABELA */
+
+#info-nutri {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    /* Cria 2 colunas de mesma largura */
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding: 7rem 12rem 2rem 12rem;
+    background-color: #C2B8FF;
+}
+
+.info-nutri-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+#info-nutri img {
+    width: 34rem;
+    justify-self: flex-start;
+}
+
+.info-nutri-texto h2 {
+    font-size: 2rem;
+}
+
+.info-nutri-texto p {
+    font-size: 1.5rem;
+}
+
+
+/* PORCAO */
+
+#porcao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 12rem;
+    background-color: #C2B8FF;
+}
+
+#porcao h2 {
+    font-size: 2rem;
+}
+
+#porcao h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+#porcao p {
+    font-size: 1.5rem;
+}
+
+/* %VD */
+
+#VD {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 12rem;
+    background-color: #C2B8FF;
+}
+
+#VD h2 {
+    font-size: 2rem;
+}
+
+#VD h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+#VD p {
+    font-size: 1.5rem;
+}
+
+
+/* ATENCAO */
+
+#atencao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 12rem;
+    background-color: #C2B8FF;
+}
+
+.atencao-div {
+    border: 0.1rem solid #6C63FF;
+    /* Borda aplicada somente ao conteúdo */
+    padding: 2rem;
+    /* Espaçamento interno da borda */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+}
+
+.atencao-div h2 {
+    font-size: 2rem;
+}
+
+.atencao-div h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+.atencao-div p {
+    font-size: 1.5rem;
+}
+
+/* DIETA */
+
+#info-dieta {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    /* Cria 2 colunas de mesma largura */
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding: 7rem 12rem 2rem 12rem;
+    background-color: white;
+}
+
+.info-dieta-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+#info-dieta img {
+    width: 32rem;
+    height: 26rem;
+    justify-self: flex-start;
+}
+
+.info-dieta-texto h2 {
+    font-size: 2rem;
+}
+
+.info-dieta-texto p {
+    font-size: 1.5rem;
+}
+
+
+#dieta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    padding: 2rem 12rem;
+}
+
+#dieta h2 {
+    font-size: 2rem;
+}
+
+#dieta h3 {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+}
+
+#dieta p {
+    font-size: 1.5rem;
+}
+
+.expansoes {
+    display: flex;
+    gap: .8rem;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion button {
+    width: 100%;
+    color: white;
+    padding: .6rem 1rem;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion button img {
+    width: 2rem;
+}
+
+.panel {
+    display: none;
+    padding: 15px;
+    text-align: left;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.evitar button {
+    background-color: red;
+}
+
+.evitar button:hover {
+    background: red;
+}
+
+.evitar button.active {
+    background: red;
+}
+
+.comer button {
+    background-color: green;
+}
+
+.comer button:hover {
+    background: green;
+}
+
+.comer button.active {
+    background: green;
+}
+
+.beneficios button {
+    background-color: yellow;
+}
+
+.beneficios button:hover {
+    background: yellow;
+}
+
+.beneficios button.active {
+    background: yellow;
+}
+
+.cuidados button {
+    background-color: grey;
+}
+
+.cuidados button:hover {
+    background: grey;
+}
+
+.cuidados button.active {
+    background: grey;
+}
+
+.accordion button.active img {
+    transform: rotate(180deg);
+}
+
+/* PSICOLÓGICO */
+
+#psicologico {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1.5rem;
+    padding: 7rem 12rem 3rem 12rem;
+    background-color: #C2B8FF;
+}
+
+#psicologico h2 {
+    font-size: 2rem;
+}
+
+#psicologico p {
+    font-size: 1.5rem;
+}
+
+.psicologico-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* FATO OU MITO */
+
+#fato-mito {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    padding: 3.5rem 12rem 4rem 12rem;
+    background-color: white;
+}
+
+#fato-mito h2 {
+    font-size: 2rem;
+}
+
+#fato-mito p {
+    font-size: 1.5rem;
+}
+
+.quiz-container {
+    background-color: #C2B8FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.opcao {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcao:hover {
+    background-color: #d0d0d0;
+}
+
+.explicacao {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    display: none;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha os botões à direita */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 10px;
+    /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+.recomecar {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 10%;
+}
+
+.recomecar:hover {
+    background-color: transparent;
+    /* Garante que o fundo continue transparente */
+    transform: rotate(90deg);
+    /* Gira a seta ao passar o mouse */
+}
+
+.seta-recomecar {
+    width: 24px;
+    /* Tamanho da seta */
+    height: 24px;
+}
+
+.proxima {
+    padding: 10px 20px;
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.proxima:hover {
+    background-color: #6C63FF;
+    /* Cor ao passar o mouse */
+}
+
+.quiz-container {
+    transition: background-color 0.3s ease;
+    /* Transição suave para a mudança de cor */
+}
+
+#resultado-final {
+    text-align: center;
+    padding: 2rem;
+}
+
+#resultado-final h2 {
+    font-size: 2rem;
+    color: #6C63FF;
+    margin-bottom: 1rem;
+}
+
+#resultado-final p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#resultado-final button {
+    padding: 0.5rem 1rem;
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#resultado-final button:hover {
+    background-color: #5548d9;
+}

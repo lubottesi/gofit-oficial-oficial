@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en" class="nutricao-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resposivo.css">
+    <title>Document</title>
+
+</head>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="/img/levantamento-de-peso.png" alt="">
+            <a href="index.html">GoFit</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="academia.html" class="nav-link">Academia</a></li>
+            <li>
+                <a href="nutricao.html" class="nav-link">Nutrição <img class="seta-dropdown" src="/img/seta-para-baixo.png" alt=""></a>
+                <ul class="dropdown">
+                    <li><a href="#macro-micro" class="nav-link">Macro x Micro</a></li>
+                    <li><a href="#caloria" class="nav-link">Caloria</a></li>
+                    <li><a href="#info-nutri" class="nav-link">Info Nutricional</a></li>
+                    <li><a href="#info-dieta" class="nav-link">Dieta</a></li>
+                    <li><a href="#psicologico" class="nav-link">Saude Mental</a></li>
+                    <li><a href="#fato-mito" class="nav-link">Fato x Mito</a></li>
+                </ul>
+            </li>
+            <li><a href="calculadoras.html" class="nav-link">Calculadoras</a></li>
+            <li><a href="quemsomos.html" class="nav-link">Quem somos</a></li>
+        </ul>
+    </nav>
+
+    <section id="nutri-inicial">
+        <div class="nutri-inicial-texto">
+            <h2>O que é nutrição</h2>
+            <p>Nutrição é a ciência que estuda os nutrientes presentes nos alimentos, bem como sua
+                absorção pelo organismo humano e os efeitos que eles têm sobre a saúde e bem-estar tanto física, quanto
+                mental.
+            </p>
+
+            <p>
+                Trata-se de uma área que desempenha um papel fundamental na saúde, uma vez que uma
+                dieta equilibrada e adequada contribui diretamente para a prevenção de doenças e
+                promoção da qualidade de vida, além de desempenhar um papel importante na manutenção do
+                equilíbrio emocional e na melhora da clareza mental.
+            </p>
+
+            <p class="nutri-inicial-frase">Nutrição é a ciência dos alimentos, que contribui diretamente para a saúde
+                fisica e mental.</p>
+        </div>
+        <img src="/img/image.png" alt="">
+    </section>
+
+    <section id="macro-micro">
+        <h2>Macro X Micro</h2>
+        <p>A nutrição é baseada na ingestão de dois tipos principais de nutrientes: macronutrientes e micronutrientes.
+            Ambos são essenciais para o funcionamento do organismo, mas desempenham papéis diferentes e são necessários
+            em quantidades distintas.
+        </p>
+
+        <h3>Macronutrientes</h3>
+        <p>Os macronutrientes são aqueles que o corpo precisa em grandes quantidades, pois fornecem energia e participam
+            da construção e manutenção dos tecidos. Eles são:
+        </p>
+
+        <section class="all-cards">
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/img/carbo.png" alt="">
+                        <h3>Carboidrato</h3>
+                        <p>1g = 4 kcal</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Fonte primária de energia para o corpo e a mente.</p>
+                        <ul>
+                            <li>Grãos e cereais</li>
+                            <li>Tubérculos e raízes</li>
+                            <li>Frutas</li>
+                            <li>Leguminosas</li>
+                            <li>Açúcares e doces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/img/proteina.png" alt="">
+                        <h3>Proteína</h3>
+                        <p>1g = 4 kcal</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Forma músculos, regula hormônios e fortalece o sistema imunológico.</p>
+                        <ul>
+                            <li>Carnes</li>
+                            <li>Ovos e leite</li>
+                            <li>Sementes</li>
+                            <li>Leguminosas</li>
+                            <li>Whey Protein</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/img/fat.jpg" alt="">
+                        <h3>Gordura</h3>
+                        <p>1g = 9 kcal</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Fornece energia, ajuda na absorção de vitaminas e regula a temperatura corporal.</p>
+                        <ul>
+                            <li>Óleos vegetais</li>
+                            <li>Peixes gordurosos</li>
+                            <li>Carnes</li>
+                            <li>Laticínios</li>
+                            <li>Abacate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h3>Micronutrientes</h3>
+        <p>Os micronutrientes são necessários em pequenas quantidades, mas são fundamentais para o metabolismo,
+            fortalecimento do sistema imunológico e diversas funções biológicas. Eles incluem:
+        </p>
+
+        <section class="all-cards">
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/img/vitaminas.jpg" alt="">
+                        <h3>Vitamina</h3>
+                        <p>0 kcal</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Fortalece o sistema imunológico, melhora a saúde da pele e auxilia no funcionamento do
+                            metabolismo.</p>
+                        <ul>
+                            <li>Frutas cítricas</li>
+                            <li>Ovos e laticínios</li>
+                            <li>Grãos integrais</li>
+                            <li>Suplementos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/img/proteina.png" alt="">
+                        <h3>Mineral</h3>
+                        <p>0 kcal</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Fortalece os ossos, regula o equilíbrio hidroeletrolítico e auxilia na produção de energia.
+                        </p>
+                        <ul>
+                            <li>Castanhas e sementes</li>
+                            <li>Leite e derivados</li>
+                            <li>Grãos integrais</li>
+                            <li>Suplementos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="caloria">
+        <h2>Caloria</h2>
+        <p>A caloria (kcal) é a unidade de medida que representa a quantidade de energia que um alimento fornece ao
+            organismo quando consumido e metabolizado. Essa energia é essencial para manter funções vitais, como a
+            respiração, circulação sanguínea, funcionamento dos órgãos e realização de atividades físicas. Quando
+            ingerimos alimentos, o corpo transforma os macronutrientes (carboidratos, proteínas e gorduras) em
+            energia,
+            medida em calorias.
+        </p>
+
+        <p>
+            A quantidade de calorias que o corpo gasta em repouso para manter funções básicas como respiração,
+            circulação sanguínea e temperatura corporal chama-se Taxa Metabólica Basal (TMB). Calcule a sua TMB.
+        </p>
+
+        <p>
+            O Gasto Energético Diário (GET) é a soma da TMB com as calorias gastas em atividades diárias, como
+            exercícios físicos e tarefas cotidianas. Calcule o seu GET.
+        </p>
+
+        <p> Se você procura ganhar peso, é necessário consumimir mais calorias do que gastar, pois o excesso é
+            armazenado como gordura.</p>
+
+        <p> Se você procura perder peso, é necessário consumimir menos calorias do que gastar, pois o corpo usa as
+            reservas de gordura para obter energia, queimando-as.
+        </p>
+    </section>
+
+    <section class="container">
+        <h1>Calculadora de Calorias Diárias</h1>
+        <form id="calorieForm">
+            <div class="form-row">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" required>
+
+                <label for="gender">Sexo:</label>
+                <select id="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+
+                <label for="height">Altura (cm):</label>
+                <input type="number" id="height" step="0.1" required>
+            </div>
+
+            <div class="form-row">
+                <label for="weight">Peso Atual (kg):</label>
+                <input type="number" id="weight" step="0.1" required>
+
+                <label for="goal">Objetivo:</label>
+                <select id="goal" required>
+                    <option value="maintain">Manter</option>
+                    <option value="lose">Emagrecer</option>
+                    <option value="gain">Engordar</option>
+                </select>
+
+                <label for="targetWeight" id="targetWeightLabel" style="display:none;">Peso Desejado (kg):</label>
+                <input type="number" id="targetWeight" style="display:none;" step="0.1" required>
+            </div>
+
+            <div class="form-row">
+                <label for="activityHours">Horas de Exercício por Semana:</label>
+                <input type="number" id="activityHours" step="0.1" required>
+
+                <label for="activityLevel">Nível de Atividade:</label>
+                <select id="activityLevel" required>
+                    <option value="sedentary">Sedentário</option>
+                    <option value="light">Leve</option>
+                    <option value="moderate">Moderado</option>
+                    <option value="active">Ativo</option>
+                </select>
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+
+    <section id="info-nutri">
+        <div class="info-nutri-texto">
+            <h2>Como ler informações nutricionais</h2>
+            <p>Nos rótulos dos alimentos contêm informações essenciais para entender o que você está consumindo.
+                Saber
+                interpretá-los pode te ajudar a fazer escolhas mais saudáveis e evitar ingredientes prejudiciais à
+                saúde.
+            </p>
+
+            <p>
+                Ao lado está o exemplo do rótulo nutricional do Doritos.
+            </p>
+
+            <p><a href="https://www.fatsecret.com.br/calorias-nutri%C3%A7%C3%A3o/" target="_blank">Clique aqui</a> para explorar
+                diversas tabelas nutricionais.</p>
+        </div>
+        <img src="/img/Captura de tela 2025-02-24 175805.png" alt="">
+        </div>
+    </section>
+
+    <section id="porcao">
+        <h2>Porção</h2>
+        <p>No rótulo do Doritos, está escrito que a porção recomendada é de 25g, mas a embalagem contém duas
+            porções.
+            Isso quer dizer que o valor nutricional informado na tabela se refere a 25,5g (meia embalagem). Se você
+            comer o pacote inteiro, estará consumindo o dobro dos valores nutricionais descritos na tabela.
+        </p>
+
+        <p>
+            Na tabela há duas quantidades informadas: 100g e 25g.
+        </p>
+
+        <p>
+            100g representa a quantidade de nutrientes por 100 gramas do produto.
+            Isso é feito para padronizar a comparação entre diferentes alimentos. Como cada produto pode ter porções
+            diferentes, muitas tabelas mostram os valores para 100g, permitindo que você compare diretamente
+            alimentos
+            diferentes, independentemente do tamanho da porção.
+        </p>
+
+        <p> 25g representa a quantidade dde nutrientes por 25 gramas do protudo, ou seja, a cada porção.</p>
+    </section>
+
+    <section id="VD">
+        <h2>%VD</h2>
+        <p>A porcentagem do valor diário (%VD) mostra a quantidade do nutriente em questão presente em uma porção do
+            produto em comparação com a quantidade que uma pessoa média deveria consumir em um dia.
+        </p>
+
+        <p>
+            Porém, você deve ter em mente que esse valor se altera conforme as necessidades individuais de cada um.
+        </p>
+
+        <p>
+            No caso do Doritos, 11% de gordura total significa que 1 porção desse alimento já representa 11% do
+            consumo
+            recomendado por dia.
+        </p>
+    </section>
+
+    <section id="atencao">
+        <div class="atencao-div">
+            <h2>Atenção</h2>
+            <p>O excesso de sódio - presente no sal de cozinha e em alimentos industrializados, como embutidos,
+                salgadinhos e congelados - pode causar hipertensão e retenção de líquidos.
+            </p>
+
+            <p>
+                A quantidade recomendada é de menos de 2.000 mg de sódio por dia (~5g de sal). Evite produtos que
+                tenham
+                mais de 400mg de sódio por porção.
+            </p>
+
+            <p>
+                Gordura trans: Presente em margarinas, biscoitos recheados e salgadinhos. Aumenta o colesterol ruim
+                e
+                deve ser evitada ao máximo.
+            </p>
+
+            <p>
+                Gordura saturada: Encontrada em carnes gordurosas, laticínios integrais e frituras. O consumo
+                excessivo
+                pode levar a doenças cardiovasculares.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="info-dieta">
+        <div class="info-dieta-texto">
+            <h2>Dieta</h2>
+            <p>A dieta é um termo usado para descrever o padrão de alimentação de um indivíduo ou de um grupo de
+                pessoas. Refere-se aos tipos de alimentos e bebidas que uma pessoa consome regularmente para manter uma
+                boa saúde, alcançar metas de perda de peso, ganhar massa muscular ou para tratar alguma condição de
+                saúde específica. Alguns tipos de dieta são:
+            </p>
+
+            <p class="nutri-inicial-frase">Busque um profissional nutricionista antes de iniciar qualquer dieta!</p>
+        </div>
+        <img src="/img/como-fazer-dieta-para-emagrecer.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="dieta">
+        <h3>Intermitente</h3>
+        <p>Realizar cerca de 10 a 12 horas diárias de jejum com o propósito de diminuir o apetite e, consequentemente,
+            comer menos nas próximas refeições. O jejum intermitente auxilia na diminuição do apetite, desintoxica o
+            organismo e estimula a perda de peso. Porém, ainda não há estudos científicos que comprovem tal eficácia, o
+            que gera um grande debate entre os especialistas. Por isso, busque a orientação de um nutricionista antes de
+            iniciar a dieta intermitente.
+        </p>
+
+        <h3>Low Carb</h3>
+        <p>Baseia-se na redução do consumo de carboidratos e no aumento da ingestão de proteínas e gorduras saudáveis.
+            Nessa abordagem, os carboidratos representam entre 10% e 40% do total calórico diário, dependendo da
+            estratégia adotada. O objetivo principal é reduzir os picos de glicose no sangue e incentivar o organismo a
+            utilizar gorduras como principal fonte de energia, promovendo a perda de peso e o controle dos níveis de
+            açúcar no sangue.
+        </p>
+
+        <div class="expansoes">
+
+            <div class="accordion evitar">
+                <button onclick="togglePanel(this)">
+                    O que Evitar
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Pães, massas, arroz branco, açúcares, doces, refrigerantes e tubérculos ricos em amido.</p>
+                </div>
+            </div>
+
+            <div class="accordion comer">
+                <button onclick="togglePanel(this)">
+                    O que Comer
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Carnes, ovos, queijos, frutas com baixo índice glicêmico, oleaginosas, verduras e legumes.</p>
+                </div>
+            </div>
+
+            <div class="accordion beneficios">
+                <button onclick="togglePanel(this)">
+                    Benefícios
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Emagrecimento, controle do açúcar no sangue, saciedade e melhora dos níveis de colesterol.</p>
+                </div>
+            </div>
+
+            <div class="accordion cuidados">
+                <button onclick="togglePanel(this)">
+                    Cuidados
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Adaptação pode causar cansaço, tontura e dor de cabeça. Precisa de acompanhamento para evitar
+                        déficits nutricionais.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Cetogênica</h3>
+        <p>Baseia-se na redução extrema de carboidratos e no aumento significativo do consumo de gorduras, com uma
+            ingestão moderada de proteínas. O objetivo principal dessa dieta é levar o corpo a um estado metabólico
+            chamado cetose, no qual ele passa a utilizar gordura como principal fonte de energia em vez da glicose. Para
+            isso, a ingestão de carboidratos é limitada a cerca de 5% a 10% do total diário de calorias, o que equivale
+            a aproximadamente 20 a 50 gramas de carboidratos por dia.
+        </p>
+
+        <div class="expansoes">
+
+            <div class="accordion evitar">
+                <button onclick="togglePanel(this)">
+                    O que Evitar
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Açúcar refinado (doces, bolos, sorvetes, refrigerantes), farinhas refinadas (pães, massas,
+                        bolachas, cereais industrializados), arroz branco e batata, frutas com alto teor de frutose
+                        (banana, uva, manga), febidas adoçadas.</p>
+                </div>
+            </div>
+
+            <div class="accordion comer">
+                <button onclick="togglePanel(this)">
+                    O que Comer
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Carnes (frango, carne bovina, porco, peixe), ovos, laticínios (queijos, nata, creme de leite),
+                        óleos e gorduras (azeite de oliva, manteiga, óleo de coco), oleaginosas (castanhas, nozes,
+                        amêndoas), vegetais de baixo carboidrato (brócolis, couve-flor, espinafre, abobrinha), abacate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion beneficios">
+                <button onclick="togglePanel(this)">
+                    Benefícios
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Perda de peso rápida, maior saciedade, redução da inflamação e melhora da resistência à insulina,
+                        aumento da clareza mental e energia, pode ajudar no controle do diabetes tipo 2 e no tratamento
+                        da epilepsia refratária.</p>
+                </div>
+            </div>
+
+            <div class="accordion cuidados">
+                <button onclick="togglePanel(this)">
+                    Cuidados
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Gripe cetogênica: fadiga, dor de cabeça, tontura nos primeiros dias, alterações no intestino
+                        (prisão de ventre ou diarreia), cãibras devido à perda de eletrólitos (necessário reposição com
+                        sódio e potássio).
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Hiperproteica</h3>
+        <p>A dieta hiperproteica é um tipo de alimentação que prioriza um alto consumo de proteínas, representando de 30
+            a 40% das calorias diárias, com o objetivo de estimular o crescimento muscular, aumentar a saciedade e
+            contribuir para o emagrecimento, sendo muito utilizada por atletas, praticantes de musculação e pessoas que
+            buscam emagrecimento sem perder massa muscular. Além disso, essa abordagem reduz ou mantém moderado o
+            consumo de carboidratos, garantindo um equilíbrio na ingestão de gorduras saudáveis.
+        </p>
+
+        <div class="expansoes">
+
+            <div class="accordion evitar">
+                <button onclick="togglePanel(this)">
+                    O que Evitar
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Alimentos ricos em carboidratos refinados e açúcares: açucar, doce, farinha refinada, arroz
+                        branco, batatas, frituras, ultraprocessados e bebidas alcoólicas.</p>
+                </div>
+            </div>
+
+            <div class="accordion comer">
+                <button onclick="togglePanel(this)">
+                    O que Comer
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Frango, peixe, carne vermelha magra, ovos, laticínios ricos em proteína (queijo, iogurte
+                        natural), oleaginosas (amêndoas, castanhas), leguminosas e vegetais ricos em proteína (lentilha,
+                        grão-de-bico, brócolis).</p>
+                </div>
+            </div>
+
+            <div class="accordion beneficios">
+                <button onclick="togglePanel(this)">
+                    Benefícios
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Favorece o ganho de massa muscular (hipertrofia), acelera o metabolismo, aumenta a saciedade,
+                        contribui para a preservação da massa muscular durante o emagrecimento.</p>
+                </div>
+            </div>
+
+            <div class="accordion cuidados">
+                <button onclick="togglePanel(this)">
+                    Cuidados
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Excesso de proteínas pode sobrecarregar os rins, pode causar constipação, se a ingestão de fibras
+                        for baixa, deve ser equilibrada para evitar deficiências nutricionais.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Bulking</h3>
+        <p>O bulking é uma fase do treinamento e da alimentação voltada para o ganho de massa muscular, onde é
+            necessário manter um superávit calórico, ingerindo mais calorias do que se gasta para favorecer o
+            crescimento muscular. Durante esse período, a dieta é rica em proteínas para auxiliar na recuperação e
+            construção dos músculos, além de incluir uma ingestão equilibrada de carboidratos e gorduras para fornecer
+            energia adequada. Aliado a isso, os treinos de força são intensos e progressivos, garantindo estímulos
+            constantes para o desenvolvimento muscular.Tipos de Bulking:
+        </p>
+        <p>Bulking limpo – aumento de calorias com alimentos saudáveis e controle da gordura corporal; <br> Bulking sujo
+            – aumento rápido de peso, incluindo alimentos calóricos e ultraprocessados, mas com maior acúmulo de
+            gordura.</p>
+        <p>Cuidado: o excesso calórico descontrolado pode levar ao ganho excessivo de gordura e a qualidade da
+            alimentação é essencial para manter saúde e desempenho.</p>
+        <p> O bulking é amplamente utilizado por atletas e praticantes de musculação que buscam aumentar a massa
+            muscular antes de entrar na fase de cutting, que visa a definição muscular através da redução de gordura.
+        </p>
+
+        <h3>Cutting</h3>
+        <p>A dieta cutting é voltada para a redução de gordura corporal enquanto se preserva a massa muscular, sendo
+            amplamente utilizada por praticantes de musculação e atletas em fase de definição. Essa abordagem envolve um
+            déficit calórico controlado, aliado a um alto consumo de proteínas e uma ingestão moderada de carboidratos e
+            gorduras saudáveis, garantindo energia suficiente para o treino e minimizando a perda de massa magra.</p>
+
+        <div class="expansoes">
+
+            <div class="accordion evitar">
+                <button onclick="togglePanel(this)">
+                    O que Evitar
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Alimentos ultraprocessados, frituras, açúcares refinados, fast food, bebidas alcoólicas,
+                        refrigerantes, doces e excesso de carboidratos simples.</p>
+                </div>
+            </div>
+
+            <div class="accordion comer">
+                <button onclick="togglePanel(this)">
+                    O que Comer
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Proteínas magras (frango, peixe, carne vermelha magra, ovos), laticínios com baixo teor de
+                        gordura, vegetais fibrosos, leguminosas, oleaginosas e carboidratos complexos em quantidades
+                        controladas (batata-doce, arroz integral, quinoa, aveia).</p>
+                </div>
+            </div>
+
+            <div class="accordion beneficios">
+                <button onclick="togglePanel(this)">
+                    Benefícios
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Redução da gordura corporal, definição muscular, manutenção da massa magra, maior controle da
+                        ingestão calórica e melhora na performance física.</p>
+                </div>
+            </div>
+
+            <div class="accordion cuidados">
+                <button onclick="togglePanel(this)">
+                    Cuidados
+                    <img src="/img/seta-para-baixo.png" alt=""></button>
+                <div class="panel">
+                    <p>Déficit calórico excessivo pode levar à perda de massa muscular, fadiga, queda de desempenho e
+                        deficiências nutricionais se não houver equilíbrio adequado na dieta.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Vegana</h3>
+        <p>
+            Baseada exclusivamente em alimentos de origem vegetal, exclui qualquer tipo de produto animal, como carnes,
+            laticínios, ovos e mel. Os adeptos buscam equilibrar a ingestão de proteínas por meio de leguminosas, grãos
+            integrais, sementes e suplementos quando necessário. Essa abordagem pode trazer benefícios cardiovasculares
+            e ajudar no controle de peso, mas requer atenção especial à ingestão de vitamina B12, ferro, ômega-3 e
+            proteínas suficientes.
+        </p>
+
+        <h3>Vegetariana</h3>
+
+        <p>
+            A dieta vegetariana exclui o consumo de carnes, mas permite a ingestão de alimentos de origem animal, como
+            ovos, leite e derivados, dependendo da variação adotada. Os praticantes podem obter proteínas por meio de
+            leguminosas, grãos integrais, laticínios e ovos, garantindo um equilíbrio nutricional. Essa alimentação pode
+            oferecer benefícios para a saúde cardiovascular e o controle de peso, mas é importante manter atenção à
+            ingestão de ferro, vitamina B12 e proteínas para evitar deficiências.
+        </p>
+
+        <h3>Mediterrânea</h3>
+        <p>Baseia em alimentos naturais, dispensando o uso de processados e ultraprocessados. Os principais itens são
+            frutas, vegetais, oleaginosas, frutos-do-mar, cereais, grãos, peixes, leites e queijos. O consumo de carne
+            vermelha é bem pequeno.
+        </p>
+        <p>Essa dieta ajuda no controle do colesterol, já que não inclui gorduras ruins e fornece todos os nutrientes
+            necessários para o organismo. Seus alimentos dão mais saciedade, o que ajuda a controlar a vontade de comer
+            em excesso e combate a diabetes e problemas cardíacos, vasculares e digestivos.
+        </p>
+
+        <h3>Dash</h3>
+        <p>Criada por cardiologistas dos Estados Unidos na década de 1990 para diminuir os casos de hipertensão no país,
+            consiste em diminuir o sódio da alimentação e consumir alimentos que ajudam no bom funcionamento vascular,
+            como frutas, vegetais, legumes, grãos, carnes magras, entre outros. Seu foco principal é o consumo diário de
+            2.300 miligramas (ou 5 gramas) de sódio, o equivalente a uma colher de chá.
+        </p>
+
+
+        <h3>Paleo</h3>
+        <p>
+            Inspirada na alimentação dos nossos ancestrais caçadores-coletores, essa dieta enfatiza o consumo de
+            alimentos naturais, não processados, como carnes, peixes, ovos, frutas, vegetais, oleaginosas e gorduras
+            saudáveis. Exclui completamente alimentos industrializados, grãos, laticínios e leguminosas, alegando que
+            esses itens não fazem parte da dieta original da humanidade. Seu objetivo é promover saúde, perda de peso e
+            melhor controle dos níveis de açúcar no sangue.
+        </p>
+
+
+    </section>
+
+    <section id="psicologico">
+
+        <h2>Nutrição X Saúde Mental</h2>
+        <p>A nutrição é um fator crucial para a saúde mental, influenciando diretamente o funcionamento do cérebro e o
+            bem-estar emocional. Uma dieta equilibrada, rica em alimentos como frutas, verduras, legumes, grãos
+            integrais, proteínas magras e gorduras saudáveis, fornece nutrientes essenciais que ajudam a reduzir o risco
+            de transtornos mentais, como depressão e ansiedade. Esses alimentos contribuem para a produção de
+            neurotransmissores, como serotonina e dopamina, que regulam o humor e promovem a sensação de bem-estar.
+        </p>
+
+        <p>Por outro lado, o consumo excessivo de alimentos ultraprocessados, ricos em açúcares e gorduras saturadas,
+            está associado a um maior risco de problemas de saúde mental. Esses alimentos podem causar inflamações no
+            organismo e prejudicar a microbiota intestinal, que tem uma conexão direta com o cérebro por meio do eixo
+            intestino-cérebro. Uma microbiota saudável é fundamental para a produção de substâncias que influenciam
+            positivamente o humor e a cognição.
+        </p>
+
+        <p>Além disso, manter hábitos alimentares regulares e equilibrados é importante para evitar flutuações de
+            energia e humor. A deficiência de nutrientes como ômega-3, vitaminas do complexo B, magnésio e zinco, por
+            exemplo, pode estar relacionada a sintomas de depressão e ansiedade.
+        </p>
+
+        <p>Em resumo, uma alimentação adequada é essencial para a saúde mental, pois fornece os elementos necessários
+            para o bom funcionamento cerebral e ajuda a prevenir transtornos emocionais. Priorizar uma dieta balanceada
+            e reduzir o consumo de alimentos ultraprocessados são estratégias eficazes para promover o equilíbrio
+            emocional e a qualidade de vida.
+        </p>
+
+        <div class="psicologico-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KFowNIMdLiI?si=k2hbjyeENGxunVYv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <section id="fato-mito">
+
+        <h2>Fato ou Mito</h2>
+        <p>A nutrição, assim como outras áreas do conhecimento, está cercada de mitos populares e informações que, muitas vezes, são passadas adiante sem embasamento científico. Esses equívocos podem levar a escolhas alimentares inadequadas e até prejudicar a saúde. Para ajudar a desvendar o que é verdade e o que é mito, preparamos este quiz com afirmações sobre nutrição. Será que você consegue identificar o que é real e o que é fake? Vamos testar seus conhecimentos!
+        </p>
+
+        <div class="quiz-container">
+            <h2 id="pergunta">Pergunta 1: "Beber água com limão em jejum emagrece."</h2>
+            <div class="opcoes">
+              <div class="opcao" data-resposta="false">Verdadeiro</div>
+              <div class="opcao" data-resposta="true">Falso</div>
+            </div>
+            <div class="explicacao" id="explicacao"></div>
+            <div class="botao-container">
+              <button class="proxima" id="proxima">Próxima Pergunta →</button>
+              <button class="recomecar" id="recomecar">
+                <img src="/img/reiniciar.png" alt="Recomeçar Quiz" class="seta-recomecar">
+              </button>
+            </div>
+            <div id="resultado-final" style="display: none;">
+                <!-- O conteúdo será preenchido dinamicamente pelo JavaScript -->
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <section id="rodape">
+            <div class="rodape-texto">
+                <p>© 2023 NutriFitHub. All rights reserved.</p>
+                <p>informações@gmail.com</p>
+            </div>
+            <div class="rodape-icone">
+                <img src="/img/o-email.png" alt="">
+                <img src="/img/instagram.png" alt="">
+                <img src="/img/twitter.png" alt="">
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="calcCaloria.js"></script>
+    <script src="menu-hamburguer.js"></script>
+
+    <script>
+        function togglePanel(button) {
+            const panel = button.nextElementSibling; // Pega o painel abaixo do botão
+
+            // Alterna entre mostrar e esconder o painel
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                button.classList.remove("active");
+            } else {
+                panel.style.display = "block";
+                button.classList.add("active");
+            }
+        }
+    </script>
+
+    <script src="fato-mito.js"></script>
+    <script src="drop-menu.js"></script>
+    <script src="flip-card.js"></script>
+
+</body>
+
+</html>

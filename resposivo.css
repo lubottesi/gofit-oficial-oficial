@@ -1,0 +1,308 @@
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    #navbar {
+        justify-content: space-between;
+    }
+    #navbar ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        width: 100%; /* Full width */
+        background-color: #6C63FF; /* Same background as navbar */
+        padding: 1rem 0; /* Padding for dropdown */
+    }
+
+    #navbar ul li:hover {
+        background-color: #6C63FF;
+    }
+
+    #navbar ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    .menu-icon {
+        display: flex; /* Show the hamburger icon */
+        cursor: pointer; /* Pointer cursor */
+        justify-content: center;
+        padding-right: 4rem;
+    }
+
+    #navbar ul li {
+        padding: 1rem; /* More padding for touch targets */
+        text-align: center; /* Center text */
+    }
+
+    #navbar ul li ul.dropdown {
+        position: static; /* Make dropdown static */
+        display: none; /* Hide dropdowns by default */
+    }
+
+    #navbar ul li:hover ul.dropdown {
+        display: block; /* Show dropdown on hover */
+    }
+
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* SOBRE NOS */
+
+    .sobre-nos {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Adjust height for smaller screens */
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-nos-texto {
+        margin: 0; /* Reset margin for smaller screens */
+    }
+
+    .sobre-nos-texto h1{
+        font-size: 2rem;
+    }
+
+
+    .sobre-nos-img-principal {
+        display: none;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* BEM VINDO */
+
+    #bemvindo h1 {
+        font-size: 1.8rem;
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* CARDS INICIAIS */
+
+    .todos-cartoes {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .cartao {
+        width: 90%; /* Make cards responsive */
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* RODAPE */
+
+    #rodape {
+        flex-direction: column; /* Stack footer items */
+        align-items: center;
+    }
+
+    .rodape-texto, .rodape-icone {
+        margin: 1rem 0; /* Add margin for spacing */
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* NUTRI - INICIAL */
+
+    #nutri-inicial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding-top: 1.7rem;
+        margin-right: 0;
+    }
+
+    #nutri-inicial img {
+        display: none;
+    }
+
+    .nutri-inicial-texto {
+        padding-left: 2rem;
+        align-items: center;
+        padding-right: 1.5rem;
+        padding-bottom: 1.7rem;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* MACRO VS MICRO */
+
+    #macro-micro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+
+    }
+
+    #macro-micro img {
+        display: none;
+    }
+
+    .all-cards {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .card:hover .card-inner {
+        transform: none; /* Remove o efeito de hover em telas menores */
+    }
+
+    .card.flipped .card-inner {
+        transform: rotateY(180deg); /* Gira o card quando a classe flipped é aplicada */
+    }    
+
+    .card-front img {
+        width: 100px !important;
+        height: auto !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: red !important; /* Se a imagem não aparecer, o fundo ficará vermelho */
+    }
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* CALORIA */
+
+    #caloria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* INFO NUTRICIONAL */
+
+    #porcao, #VD, #atencao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    #info-nutri {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    #info-nutri img {
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+    }
+
+    .info-nutri-texto {
+        padding-left: 2rem;
+        align-items: center;
+    }
+
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* DIETA */
+
+    #info-dieta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    #info-dieta img {
+        display: none;
+    }
+
+    .info-dieta-texto {
+        padding-left: 2rem;
+        align-items: center;
+    }
+
+    #dieta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    .expansoes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* PSICOLOGICO */
+    
+    #psicologico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    .psicologico-video {
+        align-self: center;
+        width: 80%;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------*/
+    /* FATO VS MITO */
+
+    #fato-mito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem; /* Ajuste de margem */
+        gap: 2rem; /* Menor espaço entre os elementos */
+        width: 100%;
+        padding: 1.7rem 1.5rem;
+    }
+
+    .quiz-container {
+        align-self: center;
+        width: 80%;
+    }
+}
